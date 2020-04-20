@@ -10,6 +10,7 @@ import lifebarBgImg from 'img/lifebar_bg.png';
 import font2Img from 'img/font2.png';
 import fontImg from 'img/CAB08X14.png';
 import titleImg from 'img/title.png';
+import music from 'music/2pac-antipasti24.mod';
 
 import HeroSprite from './HeroSprite';
 import Ennemy1 from './Ennemy1';
@@ -54,6 +55,9 @@ export default class GameScene extends Phaser.Scene {
   create() {
     const centerX = this.cameras.main.width / 2;
     const centerY = this.cameras.main.height / 2;
+
+    BassoonTracker.init(true);
+    BassoonTracker.load(music, true);
 
     this.cache.bitmapFont.add(
       'font2',

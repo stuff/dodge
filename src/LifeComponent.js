@@ -11,7 +11,6 @@ export default class LifeComponent {
 
   reset() {
     this.life = this.maxLife;
-    this.life = this.maxLife;
     this.dying = false;
     this.explosion.setVisible(false);
     this.explosion.once(

@@ -1,5 +1,5 @@
-const webpack = require('webpack')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const config = {
   output: {
@@ -21,7 +21,7 @@ const config = {
         },
       },
       {
-        test: /\.(png|jpg|gif)$/,
+        test: /\.(png|jpg|gif|mod)$/,
         use: 'file-loader',
       },
       {
@@ -49,6 +49,6 @@ const config = {
     port: 8080,
     stats: 'minimal',
   },
-}
+};
 
-module.exports = config
+module.exports = config;

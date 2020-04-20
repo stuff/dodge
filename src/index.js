@@ -1,4 +1,5 @@
 import 'phaser';
+import './bassoonplayer-min';
 
 import GameScene from './GameScene';
 
